@@ -1,0 +1,9 @@
+{
+	"partialName": "landing",
+    "components": [
+        {
+            "partialName": "hello-world",
+            "title": "Hello World"
+        }
+    ]
+}
