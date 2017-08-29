@@ -1,0 +1,10 @@
+@import '../../main.css';
+
+.section {
+    margin-top: var(--spacing-500);
+
+    &__title[class] {
+        font-family: var(--serif);
+        font-style: italic;
+    }
+}

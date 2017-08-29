@@ -13,19 +13,21 @@ export default ({ body, title, platform, initialState }) => `
         <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui" />
         <meta charset="utf-8" />
 
-        <link rel="stylesheet" href="/static/assets/app.css" />
+        ${platform && platform.headHTML ? platform.headHTML : ''}
+
+        <link rel="stylesheet" href="/missionaries/static/assets/app.css" />
 
     </head>
 
     <body>
-
-        <main id="root">
+        ${platform && platform.header ? platform.header : ''}
+        <main id="root" class="lumen-content">
             <div>
                 ${body}
             </div>
         </main>
-
-        <script src="/static/assets/bundle.js"></script>
+        ${platform && platform.footer ? platform.footer : ''}
+        <script src="/missionaries/static/assets/bundle.js"></script>
     </body>
 </html>
 `;

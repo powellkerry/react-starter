@@ -1,0 +1,43 @@
+{
+    "component": "referral",
+    "partialName": "referral",
+    "firstName": "James",
+    "lastName": "Madison",
+    "referralAssignedDateLabel": "Sent",
+    "referralAssignedDate": "30 Aug 2017",
+    "referralStatusName": "Not yet contacted",
+    "missionName": "Canada Calgary Mission",
+    "missionNameLabel": "Assigned to",
+    "missionaries": [{
+        "firstName": "Todd",
+        "lastName": "Jacobsen",
+        "genderCode": "Elder",
+        "photoUrl": "https://placebear.com/50/50"
+    },{
+        "firstName": "Ethan",
+        "lastName": "Lowe",
+        "genderCode": "Elder",
+        "photoUrl": "https://placebear.com/50/50"
+    }],
+    "areaNumbers": ["458-965-8569", "235-687-4859"],
+    "areaEmail": "calgary-north-area@myldsmail.net",
+    "bishopLabel": "Bishop",
+    "bishopFirstName": "Barry",
+    "bishopLastName": "Klaven",
+    "bishopPhone": "613-584-6985",
+    "wardMissionLeaderLabel": "Ward Mission Leader",
+    "wardMissionLeaderFirstName": "Joel",
+    "wardMissionLeaderLastName": "Jensen",
+    "wardMissionLeaderPhone": "598-695-3568",
+    "missionOfficeName": "Canada Calgary Mission Office",
+    "missionOfficePhone": "854-854-6957",
+    "missionOfficeEmail": "canada_calgary_mission_office@ldschurch.org",
+    "meetinghouseLabel": "Meetinghouse and Ward",
+    "unitName": "Calgary 1st Ward",
+    "unitMeetingTimes": "9am-12pm",
+    "unitAddress": "2526 24 Ave NW, Calgary, AB T2N 4H9, Canada",
+    "noteLabel": "Your Message",
+    "note": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo.",
+    "viewMoreText": "View More",
+    "viewLessText": "View Less"
+}

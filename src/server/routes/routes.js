@@ -20,7 +20,7 @@ var render = function () {
 	};
 };
 
-router.get(['^/((?!components|layouts|search)[a-z-]*$)','/'], function(req, res, next) {
+router.get(['^missionaries/((?!components|layouts|search)[a-z-]*$)','/missionaries'], function(req, res, next) {
         middleware.getPage(req, res, function(data){
             res.locals.data = merge(res.locals.data, data);
             next();

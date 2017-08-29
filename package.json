@@ -44,7 +44,11 @@
     "webpack-node-externals": "^1.2.0"
   },
   "dependencies": {
+    "@lds/themes": "^1.0.0-alpha.6",
     "async": "^2.2.0",
+    "lds-logger": "^0.2.2",
+    "lds-cf-service-config": "^2.1.3",
+    "lds-platform": "1.2.0",
     "autoprefixer": "^6.7.7",
     "babel-preset-stage-2": "^6.24.1",
     "babel-register": "^6.24.0",

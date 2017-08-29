@@ -220,3 +220,11 @@
     th {
       padding: 0;
     }
+
+
+	@font-face { font-family: "Helam"; font-weight: 300; font-style: normal; src: url("//edge.ldscdn.org/cdn2/common/fonts/helam/20141031/Helam-Slab-GWeb-Light.woff") format("woff"); }
+	@font-face { font-family: "Helam"; font-weight: 400; font-style: normal; src: url("//edge.ldscdn.org/cdn2/common/fonts/helam/20141031/Helam-Slab-GWeb-Regular.woff") format("woff"); }
+	@font-face { font-family: "Helam"; font-weight: 400; font-style: italic; src: url("//edge.ldscdn.org/cdn2/common/fonts/helam/20141031/Helam-Slab-GWeb-Italic.woff") format("woff"); }
+	@font-face { font-family: "Helam"; font-weight: 700; font-style: normal; src: url("//edge.ldscdn.org/cdn2/common/fonts/helam/20141031/Helam-Slab-GWeb-Bold.woff") format("woff"); }
+	@font-face { font-family: "Helam"; font-weight: 700; font-style: italic; src: url("//edge.ldscdn.org/cdn2/common/fonts/helam/20141031/Helam-Slab-GWeb-Bold-Italic.woff") format("woff"); }
+	@font-face { font-family: "Helam"; font-weight: 800; font-style: normal; src: url("//edge.ldscdn.org/cdn2/common/fonts/helam/20141031/Helam-Slab-GWeb-Extra-Bold.woff") format("woff"); }

@@ -1,0 +1,39 @@
+@import '@lds/themes/dist/css/common.css';
+@import '@lds/themes/dist/css/lumen.css';
+@import '../../main.css';
+
+.confirm {
+    background: var(--black-200);
+    padding: var(--spacing-400);
+
+    &__title[class] {
+        font-family: var(--serif);
+        font-style: italic;
+        margin-top: 0;
+    }
+
+    &__controls {
+        margin-top: var(--spacing-400);
+    }
+
+    &__continue {
+        background: var(--red);
+        color: var(--white);
+        border-radius: var(--border-radius);
+        border: none;
+        text-transform: uppercase;
+        font-size: var(--font-size-400);
+        padding: var(--spacing-100) var(--spacing-300);
+    }
+
+    &__cancel {
+        background: var(--black-700);
+        color: var(--white);
+        border-radius: var(--border-radius);
+        border: none;
+        text-transform: uppercase;
+        font-size: var(--font-size-400);
+        margin-left: var(--spacing-200);
+        padding: var(--spacing-100) var(--spacing-300);
+    }
+}

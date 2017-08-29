@@ -1,0 +1,8 @@
+{
+    "component": "confirm",
+    "partialName": "confirm",
+    "title": "Remove referral from list?",
+    "message": "Removing a referral will <b>not</b> cancel it. Please contact the assigned missionaries if needed.",
+    "continueText": "Remove",
+    "cancelText": "Cancel"
+}

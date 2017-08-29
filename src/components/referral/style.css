@@ -1,0 +1,113 @@
+@import '@lds/themes/dist/css/common.css';
+@import '@lds/themes/dist/css/lumen.css';
+
+.referral {
+    &__container {
+        background: var(--black-200);
+        padding: var(--spacing-400) var(--spacing-400) var(--spacing-500);
+        position: relative;
+
+        &[data-hidden=true] {
+            display: none;
+        }
+    }
+
+    &__name[class] {
+        margin-top: 0;
+    }
+
+    &__delete {
+        float: right;
+        border: none;
+        background: transparent;
+        color: var(--red);
+        outline: transparent;
+
+        & .icon {
+            height: 30px;
+            width: 30px;
+        }
+    }
+
+    &__status {
+        margin-bottom: var(--spacing-300);
+    }
+
+    &__mission {
+        margin-bottom: var(--spacing-300);
+    }
+
+    &__missionary {
+        margin-bottom: var(--spacing-300);
+        &__image {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            vertical-align: middle;
+        }
+
+        &__name {
+            vertical-align: middle;
+            margin-left: var(--spacing-300);
+        }
+    }
+
+    &__area-number {
+        display: inline-block;
+        margin-bottom: var(--spacing-300);
+        margin-right: var(--spacing-300);
+    }
+
+    &__area-email {
+        display: block;
+        margin-bottom: var(--spacing-300);
+    }
+
+    &__details {
+        transition: all 400ms ease;
+        max-height: 1000px;
+        overflow: hidden;
+
+        &__container {
+            border-top: 1px solid var(--black-500);
+            padding: var(--spacing-300) 0;
+        }
+
+        &:not([data-expanded=true]) {
+            max-height: 0px;
+        }
+    }
+
+    &__section {
+        margin-bottom: var(--spacing-300);
+
+        &__header {
+            font-weight: bold;
+            margin-bottom: var(--spacing-200);
+        }
+
+        &__link {
+            display: block;
+        }
+    }
+    &__details-trigger {
+        position: absolute;
+        right: var(--spacing-300);
+        bottom: var(--spacing-300);
+        border: none;
+        background: none;
+        color: var(--blue-500);
+        outline: none;
+    }
+
+    &__space {
+        margin-bottom: var(--spacing-300);
+    }
+
+    &__confirm {
+        display: none;
+        &[data-hidden = false] {
+            display: block;
+        }
+    }
+}

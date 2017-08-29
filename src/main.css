@@ -1,1 +1,156 @@
+@import '@lds/themes/dist/css/common.css';
+@import '@lds/themes/dist/css/lumen.css';
+
+@import 'theme/vars.css';
 @import 'theme/core.css';
+
+.lumen-content {
+    font-family: var(--sans);
+    font-size: var(--font-size-500);
+    font-weight: 300;
+    line-height: var(--line-height);
+    color: var(--black-800);
+
+
+    & a {
+        text-decoration: none;
+        color: #147ea7;
+    }
+
+    & p {
+        margin: 0 0 var(--spacing-400);
+    }
+
+    & ul {
+        padding-left: var(--spacing-400);
+        margin: 0 0 var(--spacing-400);
+    }
+
+    & li {
+        line-height: var(--line-height);
+        margin: var(--spacing-300) 0;
+
+        &:first-child {
+            margin-top: var(--spacing-200);
+        }
+    }
+
+    & h1 {
+        font-family: var(--serif);
+        font-size: var(--font-size-900);
+        font-weight: normal;
+        line-height: var(--line-height-400);
+        margin: var(--spacing-500) 0 var(--spacing-300);
+        border-bottom: 1px solid var(--black-500);
+        padding-bottom: var(--spacing-200);
+
+        @media (--mq-300) {
+            font-size: var(--font-size-1100);
+        }
+    }
+
+    & h2 {
+        font-size: var(--font-size-700);
+        line-height: var(--line-height-400);
+        font-weight: 300;
+
+        @media (--mq-300) {
+            font-size: var(--font-size-1000);
+        }
+    }
+
+    & h3 {
+        font-family: var(--sans);
+        font-size: var(--font-size-500);
+        font-weight: normal;
+        line-height: var(--line-height-400);
+        margin: 40px 0 10px;
+
+        @media (--mq-300) {
+            font-size: var(--font-size-900);
+        }
+    }
+}
+
+.lumen-page-scan {
+    width: 83.2vw;
+    margin-left: 8.4vw;
+}
+
+.lumen-page-read {
+    width: 83.2vw;
+    margin-left: 8.4vw;
+}
+
+.full-width {
+    margin-left: -8.4vw;
+    width: calc(83.2vw + (2 * 8.4vw));
+}
+
+@media (--mq-100) {
+    .lumen-page-scan {
+        width: 88vw;
+        margin-left: 6vw;
+    }
+
+    .lumen-page-read {
+        width: 72.66667vw;
+        margin-left: 13.66667vw;
+    }
+
+    .full-width {
+        margin-left: -6vw;
+        width: calc(88vw + 12vw);
+    }
+}
+
+@media (--mq-200) {
+    .lumen-page-scan {
+        width: 90.4vw;
+        margin-left: 4.8vw;
+    }
+
+    .lumen-page-read {
+        width: 59.2vw;
+        margin-left: 20.4vw;
+    }
+
+    .full-width {
+        margin-left: -4.8vw;
+        width: calc(90.4vw + (2 * 4.8vw));
+    }
+}
+
+@media (--mq-300) {
+    .lumen-page-scan {
+        width: 92.8vw;
+        margin-left: 3.6vw;
+    }
+
+    .lumen-page-read {
+        width: 45.2vw;
+        margin-left: 27.4vw;
+    }
+
+    .full-width {
+        margin-left: -3.6vw;
+        width: calc(92.8vw + (2 * 3.6vw));
+    }
+}
+
+@media (--mq-400) {
+    .lumen-page-scan {
+        width: 71vw;
+        margin-left: 14.5vw;
+    }
+
+    .lumen-page-read {
+        width: 34.7vw;
+        margin-left: 32.65vw;
+    }
+
+    .full-width {
+        margin-left: -14.5vw;
+        width: calc(71vw + 29vw);
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "component": "form-component",
+    "partialName": "form-component",
+    "submitUrl": "/missionaries/submit",
+    "name": "referral",
+    "components": [{
+        "component": "section",
+        "partialName": "section",
+        "title": "Your Contact Information",
+        "subTitle": "The missionaries may use this information to contact you."
+    }]
+}

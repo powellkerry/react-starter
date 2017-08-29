@@ -1,0 +1,69 @@
+{
+    "component": "columns",
+    "partialName": "columns",
+    "columns": [{
+        "components": [{
+            "component": "section",
+            "partialName": "section",
+            "title": "Your Contact Information",
+            "subTitle": "The missionaries may use this information to contact you.",
+            "components": [{
+                "component": "form-field",
+                "partialName": "form-field",
+                "name": "referrerFirstName",
+                "type": "hidden"
+            },{
+                "component": "form-field",
+                "partialName": "form-field",
+                "name": "referrerLastName",
+                "type": "hidden"
+            },{
+                "component": "form-field",
+                "partialName": "form-field",
+                "name": "referrerPhone",
+                "type": "text",
+                "disabled": true,
+                "label": "Phone",
+                "value": "801-234-5678"
+            },{
+                "component": "form-field",
+                "partialName": "form-field",
+                "name": "referrerEmail",
+                "type": "text",
+                "disabled": true,
+                "label": "Email Address",
+                "value": "alexosmond@ldschurch.org"
+            }]
+        },{
+            "component": "section",
+            "partialName": "section",
+            "title": "Referral's Contact Information",
+            "subTitle": "Please include as much information as possible",
+            "components": [{
+                "component": "form-field",
+                "partialName": "form-field",
+                "name": "firstName",
+                "type": "text",
+                "label": "First Name"
+            },{
+                "component": "form-field",
+                "partialName": "form-field",
+                "name": "lastName",
+                "type": "text",
+                "label": "Last Name"
+            },{
+                "component": "form-field",
+                "partialName": "form-field",
+                "name": "email",
+                "type": "email",
+                "label": "Email Address"
+            },{
+                "component": "form-field",
+                "partialName": "form-field",
+                "name": "phone",
+                "type": "tel",
+                "label": "Phone"
+            }]
+        }]
+    }]
+}

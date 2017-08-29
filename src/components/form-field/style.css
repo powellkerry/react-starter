@@ -1,0 +1,42 @@
+@import '@lds/themes/dist/css/common.css';
+@import '@lds/themes/dist/css/lumen.css';
+
+.form-field {
+    margin-bottom: var(--spacing-300);
+
+    &__label {
+        display: block;
+    }
+
+    &__select{
+        position: relative;
+
+        &:after {
+            content: '◄ ►';
+            position: absolute;
+            right: 5px;
+            top: 10px;
+            font-size: var(--font-size-100);
+            transform: rotate(90deg);
+        }
+
+        & select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+    }
+
+    &__input[class] {
+        width: 100%;
+        border: 1px solid var(--black-500);
+        background: var(--white);
+        padding: var(--spacing-200) var(--spacing-300);
+        border-radius: var(--border-radius);
+
+        &[disabled] {
+            border: none;
+            padding: 0;
+        }
+    }
+}

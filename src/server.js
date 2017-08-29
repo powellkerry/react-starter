@@ -6,10 +6,13 @@ import {json, urlencoded} from 'body-parser';
 import helmet from 'helmet';
 import compression from 'compression';
 import config from '../config';
+import ldsLogger from 'lds-logger';
 
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 import main from './main';
+
+let logger = ldsLogger.createLogger('');
 
 var oneDay = 86400000,
     oneWeek = 604800000,
@@ -42,10 +45,10 @@ if (process.env.NODE_ENV !== 'staging' || process.env.NODE_ENV !== 'production')
 
 server.disable('x-powered-by');
 
-server.use('/static', express.static(path.join(__dirname, '/dist'), {maxAge: oneDay}));
+server.use('/missionaries/static', express.static(path.join(__dirname, '/dist'), {maxAge: oneDay}));
 
-server.use('/components', require('./server/routes/components'));
-server.use('/layouts', require('./server/routes/layouts'));
+server.use('/missionaries/components', require('./server/routes/components'));
+server.use('/missionaries/layouts', require('./server/routes/layouts'));
 server.use('/', require('./server/routes/routes'));
 
 server.use(function(err, req, res, next) {

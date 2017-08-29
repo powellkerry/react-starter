@@ -11,9 +11,9 @@ Object.defineProperties(configs, {
 			return require('./local');
 		}
 	},
-	development: {
+	dev: {
 		get: function(){
-			return require('./development');
+			return require('./dev');
 		}
 	},
 	test: {
@@ -21,25 +21,27 @@ Object.defineProperties(configs, {
 			return require('./test');
 		}
 	},
-	staging: {
+	stage: {
 		get: function(){
-			return require('./staging');
+			return require('./stage');
 		}
 	},
-	production: {
+	prod: {
 		get: function(){
-			return require('./production');
+			return require('./prod');
 		}
 	}
 });
 
 config = configs[process.env.NODE_ENV || 'local'];
 
+var vcap = process.env.NO_VCAP ? {} : require('lds-cf-service-config');
+
 var envConfig = process.env.config || '{}';
 
 config = merge(config, JSON.parse(envConfig));
 
-var mergedConfig = config;
+var mergedConfig = merge(config, vcap);
 
 exports.init = function(options){
 	options = options || {};
@@ -47,6 +49,10 @@ exports.init = function(options){
 	var mappings = options.mappings || {},
 		mergedConfig,
 		merged = {};
+
+	for(var prop in vcap){
+		merged[prop] = merge(config[(mappings[prop] || prop)], vcap[prop].credentials);
+	}
 
 	mergedConfig = merge(config, merged);
 	var env = (process.env.NODE_ENV || 'local');

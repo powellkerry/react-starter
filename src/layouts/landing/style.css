@@ -1,5 +1,5 @@
 @import '../../main.css';
 
-.landing {
-
+.landing__container {
+    @extend .lumen-page-scan;
 }

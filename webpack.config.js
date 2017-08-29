@@ -4,19 +4,6 @@ var cssimport = require('postcss-import');
 var nodeExternals = require('webpack-node-externals');
 var combineLoaders = require('webpack-combine-loaders');
 
-var isProduction = process.env.NODE_ENV === 'production';
-
-var clientLoaders = isProduction ? productionPluginDefine.concat([
-    new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.OccurrenceOrderPlugin(),
-    new webpack.optimize.UglifyJsPlugin({
-        compress: {
-            warnings: false
-        },
-        sourceMap: false
-    })
-]) : [];
-
 var cssLoader = ExtractTextPlugin.extract({
     use: [
         { loader: 'css-loader', options: { modules: true, sourceMap: true, importLoaders: 1, localIdentName:'[local]'}},
